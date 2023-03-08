@@ -11,6 +11,7 @@ module.exports = {
       },
       colors: {
         primary: '#FC2E2E',
+        'title-primary': '#111827',
         dark: '#222222',
       },
       keyframes: {

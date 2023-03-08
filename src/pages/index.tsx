@@ -3,6 +3,7 @@ import * as React from 'react';
 import Seo from '@/components/Seo';
 
 import { Header } from '../components/header/Header';
+import { Navbar } from '../components/header/Navbar';
 
 /**
  * SVGR Support
@@ -23,6 +24,7 @@ export default function HomePage() {
       <Seo />
 
       <Header />
+      <Navbar />
     </React.Fragment>
   );
 }
