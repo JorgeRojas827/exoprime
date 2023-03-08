@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React, { useState } from 'react';
 
 interface IProps {
@@ -8,6 +9,8 @@ interface IProps {
 
 export const NavbarItem = ({ href, title }: IProps) => {
   const [hovered, setHovered] = useState<boolean>(false);
+  const router = useRouter();
+
   return (
     <Link
       href={href}
@@ -16,11 +19,7 @@ export const NavbarItem = ({ href, title }: IProps) => {
       onMouseLeave={() => setHovered(false)}
     >
       <p>{title}</p>
-      {(location.href.slice(
-        location.href.indexOf('#'),
-        location.href.length
-      ) === href ||
-        hovered) && (
+      {(router.asPath === '/' + href || hovered) && (
         <div
           style={{ height: 2 }}
           className='w-16 self-center bg-primary'
