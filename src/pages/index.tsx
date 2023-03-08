@@ -2,6 +2,7 @@ import * as React from 'react';
 
 import Seo from '@/components/Seo';
 
+import { CarouselComponent } from '../components/carousel/CarouselComponent';
 import { Header } from '../components/header/Header';
 import { Navbar } from '../components/header/Navbar';
 
@@ -25,6 +26,7 @@ export default function HomePage() {
 
       <Header />
       <Navbar />
+      <CarouselComponent />
     </React.Fragment>
   );
 }
