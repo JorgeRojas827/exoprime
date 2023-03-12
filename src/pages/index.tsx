@@ -1,5 +1,6 @@
 import * as React from 'react';
 
+import { About } from '@/components/body/About';
 import Seo from '@/components/Seo';
 
 import { CarouselComponent } from '../components/carousel/CarouselComponent';
@@ -27,6 +28,7 @@ export default function HomePage() {
       <Header />
       <Navbar />
       <CarouselComponent />
+      <About />
     </React.Fragment>
   );
 }

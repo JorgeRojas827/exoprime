@@ -16,6 +16,7 @@ export const CarouselComponent = () => {
       interval={5000}
       autoPlay={true}
       showStatus={false}
+      showThumbs={false}
       renderArrowPrev={(clickHandler, hasPrev) => {
         return (
           <div className='hidden md:block'>
