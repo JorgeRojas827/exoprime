@@ -29,17 +29,18 @@ export const About = () => {
           src='/images/background.png'
           alt='Image'
         />
-        <div className='flex items-center justify-center space-x-80'>
+        <div className='flex flex-col items-center justify-center xl:flex-row xl:space-x-16 2xl:space-x-80'>
           <div className='relative'>
-            <h1 className='text-5xl '>Acerca de nosotros</h1>
-            <div className='absolute left-0 mt-2 h-0.5 w-32 bg-primary'></div>
+            <h1 className='text-3xl md:text-5xl'>Acerca de nosotros</h1>
+            <div className='absolute left-0 mt-2 h-0.5 w-20 bg-primary md:w-32'></div>
           </div>
-          <h6 className='text-xl font-medium'>
+          <h6 className='font-base mt-10 px-10 text-sm sm:px-0 md:text-xl md:font-medium xl:mt-0'>
             Exoprime ofrece servicios de limpieza comercial en Salt Lake City,{' '}
-            <br />
+            {width ? width > 400 && <br /> : null}
             UT y la comunidad circundante. Específicamente, nos complace servir{' '}
-            <br />a clientes en Draper, Salt Lake City, Sandy, South and West
-            Jordan y <br />
+            {width ? width > 400 && <br /> : null}
+            City, Sandy, South and West Jordan y{' '}
+            {width ? width > 400 && <br /> : null}
             West Valley City.{' '}
           </h6>
         </div>
