@@ -16,6 +16,7 @@ export const About = () => {
           position: 'relative',
           height: 310,
         }}
+        id='whoweare'
       >
         <Image
           width={width ? width : 0}

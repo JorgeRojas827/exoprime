@@ -14,6 +14,12 @@ export const NavbarItem = ({ href, title }: IProps) => {
   const { width } = useWindowSize();
   const router = useRouter();
 
+  const handleClick = () => {
+    document.querySelector(href)?.scrollIntoView({
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <Link
       href={href}
@@ -22,6 +28,7 @@ export const NavbarItem = ({ href, title }: IProps) => {
       }`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      onClick={handleClick}
     >
       <p>{title}</p>
       {(router.asPath === '/' + href || hovered) && (

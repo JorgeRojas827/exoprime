@@ -5,7 +5,10 @@ import { _attributes, IAttributes } from './resources';
 
 export const Attributes = () => {
   return (
-    <section className='grid grid-cols-12 place-content-center gap-10 py-32 md:px-32 2xl:px-96'>
+    <section
+      id='ourvalues'
+      className='grid grid-cols-12 place-content-center gap-10 py-32 md:px-32 2xl:px-96'
+    >
       {_attributes.map((e: IAttributes, index: number) => {
         return (
           <div
