@@ -21,8 +21,48 @@ export const _attributes: IAttributes[] = [
   },
 ]
 
+export const _services: IServices[] = [
+  {
+    title: 'Oficinas Comerciales',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor.',
+    image: '/images/oficinas.png',
+    tag: 'oficinas'
+  },
+  {
+    title: 'Industrias',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor.',
+    image: '/images/industrias.png',
+    tag: 'industrias'
+  },
+  {
+    title: 'Entidades Financieras',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor.',
+    image: '/images/entidades.png',
+    tag: 'entidades'
+  },
+  {
+    title: 'Instalaciones médicas',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor.',
+    image: '/images/instalaciones.png',
+    tag: 'instalaciones'
+  },
+  {
+    title: 'Obras de Construcción',
+    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor.',
+    image: '/images/obras.png',
+    tag: 'obras'
+  },
+]
+
 export interface IAttributes {
   icon: string,
   title: string,
   content: string
 } 
+
+export interface IServices {
+  image: string,
+  title: string,
+  content: string,
+  tag: string
+}

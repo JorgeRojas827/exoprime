@@ -3,6 +3,7 @@ import * as React from 'react';
 import { About } from '@/components/body/About';
 import { Attributes } from '@/components/body/Attributes';
 import { Quotation } from '@/components/body/Quotation';
+import { Services } from '@/components/body/Services';
 import Seo from '@/components/Seo';
 
 import { CarouselComponent } from '../components/carousel/CarouselComponent';
@@ -33,6 +34,7 @@ export default function HomePage() {
       <About />
       <Attributes />
       <Quotation />
+      <Services />
     </React.Fragment>
   );
 }
