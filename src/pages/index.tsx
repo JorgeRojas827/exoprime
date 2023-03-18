@@ -32,9 +32,9 @@ export default function HomePage() {
       <Navbar />
       <CarouselComponent />
       <About />
+      <Services />
       <Attributes />
       <Quotation />
-      <Services />
     </React.Fragment>
   );
 }
