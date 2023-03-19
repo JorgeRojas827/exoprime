@@ -10,6 +10,7 @@ import { Direction } from '../components/body/Direction';
 import { CarouselComponent } from '../components/carousel/CarouselComponent';
 import { Header } from '../components/header/Header';
 import { Navbar } from '../components/header/Navbar';
+import { Footer } from '@/components/body/Footer';
 
 /**
  * SVGR Support
@@ -37,6 +38,7 @@ export default function HomePage() {
       <Attributes />
       <Direction />
       <Quotation />
+      <Footer />
     </React.Fragment>
   );
 }
