@@ -53,6 +53,20 @@ export const _services: IServices[] = [
     tag: 'obras'
   },
 ]
+export const _values: IValues[] = [
+  {
+    title: 'Visión',
+    description: 'Creemos en los procesos respetuosos con el medio ambiente, envases reciclados y estamos totalmente en contra de las pruebas en animales. Es donde a partir de aquí tenemos un ideal para cada persona que use nuestros productos, sentirse libre de decir que respeta a la naturaleza al 100%.'
+  },
+  {
+    title: 'Misión',
+    description: 'Nuestra misión como empresa ecológica es lograr que tanto personas como otras empresas logren tomar conciencia de los productos que hacen daño a nuestro planeta.'
+  },
+  {
+    title: 'Objetivos',
+    description: 'Tenemos como objetivo cambiar la industria de la belleza a una industria más consciente con respecto a la manera de elaborar los productos vendidos.'
+  },
+]
 
 export interface IAttributes {
   icon: string,
@@ -65,4 +79,9 @@ export interface IServices {
   title: string,
   content: string,
   tag: string
+}
+
+export interface IValues {
+  title: string,
+  description: string
 }

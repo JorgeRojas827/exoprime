@@ -6,6 +6,7 @@ import { Quotation } from '@/components/body/Quotation';
 import { Services } from '@/components/body/Services';
 import Seo from '@/components/Seo';
 
+import { Direction } from '../components/body/Direction';
 import { CarouselComponent } from '../components/carousel/CarouselComponent';
 import { Header } from '../components/header/Header';
 import { Navbar } from '../components/header/Navbar';
@@ -34,6 +35,7 @@ export default function HomePage() {
       <About />
       <Services />
       <Attributes />
+      <Direction />
       <Quotation />
     </React.Fragment>
   );
