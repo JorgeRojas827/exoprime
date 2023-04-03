@@ -62,7 +62,7 @@ export const CarouselComponent = () => {
             <div
               className='absolute left-0 top-0 h-full w-full'
               style={{
-                backgroundColor: ' rgba(60, 60, 60, 0.79)',
+                backgroundColor: ' rgba(60, 60, 60, 0.60)',
               }}
             ></div>
             <div className='absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center space-y-3 text-white'>
