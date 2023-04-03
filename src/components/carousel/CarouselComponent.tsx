@@ -67,14 +67,16 @@ export const CarouselComponent = () => {
             ></div>
             <div className='absolute left-0 top-0 flex h-full w-full flex-col items-center justify-center space-y-3 text-white'>
               <h1 className='px-6 text-4xl font-extrabold md:px-0 md:text-5xl'>
-                Servicios más allá de las expectativas
+                {e.title}
               </h1>
-              <h6 className='text-base md:text-xl'>
-                Creando soluciones, un cliente a la vez
-              </h6>
-              <button className='w-60 rounded-xl bg-primary py-3 font-semibold hover:translate-y-px  md:w-96 md:py-4 md:text-base'>
-                ¡Obten una cotización gratuita!
-              </button>
+              <h6 className='text-base md:text-xl'>{e.subtitle}</h6>
+              <a
+                href='https://wa.me/+13854876109?text=Hello,%20I came from the web of Exoprime Services%20I%20would%20like%20to%20ask%20for%20a%20quote,%20my%20situation%20is:%20'
+                target='_blank'
+                className='w-60 rounded-xl bg-primary py-3 font-semibold hover:translate-y-px  md:w-96 md:py-4 md:text-base'
+              >
+                Get a free quote!
+              </a>
             </div>
             <Image
               width={width ? width : 0}

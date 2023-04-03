@@ -17,7 +17,10 @@ export const Header = () => {
           src='/images/Whatsapp1.png'
           alt='Pin icon'
         />
-        <p className='text-xs font-semibold'>+1 385 487 6423</p>
+        <div className='flex space-x-2'>
+          <p className='text-xs font-semibold'>+1 385 487 6109 /</p>
+          <p className='text-xs font-semibold'>+1 385 487 6423</p>
+        </div>
       </div>
     </header>
   );

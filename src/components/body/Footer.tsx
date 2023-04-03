@@ -37,6 +37,7 @@ export const Footer = () => {
               src='/images/whatsappfooter.png'
               alt='logo'
             />
+            <p>+1 385 487 6109</p>
             <p>+1 385 487 6423</p>
           </div>
           <div className='flex space-x-3'>
@@ -52,7 +53,7 @@ export const Footer = () => {
           </div>
           <div className='flex space-x-3'>
             <Image width={30} height={30} src='/images/email.png' alt='logo' />
-            <p>Ejemplo@gmail.com</p>
+            <p>exoprimeservices@gmail.com</p>
           </div>
         </div>
         <div className='mt-8 flex items-center justify-center space-x-3'>

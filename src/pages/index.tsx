@@ -2,15 +2,15 @@ import * as React from 'react';
 
 import { About } from '@/components/body/About';
 import { Attributes } from '@/components/body/Attributes';
+import { Certified } from '@/components/body/Certified';
+import { Footer } from '@/components/body/Footer';
 import { Quotation } from '@/components/body/Quotation';
 import { Services } from '@/components/body/Services';
 import Seo from '@/components/Seo';
 
-import { Direction } from '../components/body/Direction';
 import { CarouselComponent } from '../components/carousel/CarouselComponent';
 import { Header } from '../components/header/Header';
 import { Navbar } from '../components/header/Navbar';
-import { Footer } from '@/components/body/Footer';
 
 /**
  * SVGR Support
@@ -36,7 +36,7 @@ export default function HomePage() {
       <About />
       <Services />
       <Attributes />
-      <Direction />
+      <Certified />
       <Quotation />
       <Footer />
     </React.Fragment>

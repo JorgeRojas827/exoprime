@@ -30,6 +30,7 @@ export const SingleService = ({
   order,
   tag,
   image,
+  list,
   setSelected,
   selectedImage,
 }: IProps) => {
@@ -51,6 +52,7 @@ export const SingleService = ({
       }}
       elevation={0}
       onClick={() => setSelected(image)}
+      id={tag}
     >
       <AccordionSummary
         sx={{
@@ -89,7 +91,20 @@ export const SingleService = ({
           <h6 className='text-lg font-bold sm:text-2xl'>{title}</h6>
         </div>
       </AccordionSummary>
-      <AccordionDetails>{content}</AccordionDetails>
+      <AccordionDetails>
+        <p>{content}</p>
+        {list && (
+          <ul>
+            {list.map((item, index: number) => {
+              return (
+                <li className='mt-5' key={index}>
+                  • {item}
+                </li>
+              );
+            })}
+          </ul>
+        )}
+      </AccordionDetails>
     </Accordion>
   );
 };

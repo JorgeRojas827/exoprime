@@ -14,10 +14,10 @@ export const Navbar = () => {
         alt='logo'
       />
       <div className='col-span-9 hidden items-center justify-between md:flex'>
-        <NavbarItem href='#whoweare' title='¿Quiénes somos?' />
-        <NavbarItem href='#services' title='Servicios' />
-        <NavbarItem href='#ourvalues' title='Nuestros valores' />
-        <NavbarItem href='#wherego' title='¿A dónde vamos?' />
+        <NavbarItem href='#whoweare' title='About us' />
+        <NavbarItem href='#cleaning' title='Cleaning' />
+        <NavbarItem href='#homemaintenance' title='Home Maintenance' />
+        <NavbarItem href='#quotation' title='Request a quote' />
       </div>
     </nav>
   );

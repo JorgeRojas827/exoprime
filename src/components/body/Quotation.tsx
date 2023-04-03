@@ -17,6 +17,7 @@ export const Quotation = () => {
           position: 'relative',
           height: 310,
         }}
+        id='quotation'
       >
         <Image
           width={width ? width : 0}
@@ -33,13 +34,17 @@ export const Quotation = () => {
         <div className='flex flex-col items-center justify-center xl:flex-row xl:space-x-16 2xl:space-x-80'>
           <div className='relative'>
             <h1 className='text-center text-3xl font-normal  md:text-5xl'>
-              ¡Obtén una cotización <span className='font-bold'>gratuita!</span>
+              Get a <span className='font-bold'>free quotation!</span>
             </h1>
           </div>
-          <button className='z-10 mt-5 flex w-60 items-center justify-evenly rounded-xl bg-primary py-3 font-semibold text-white hover:translate-y-px md:py-4  md:text-base xl:mt-0'>
+          <a
+            href='https://wa.me/+13854876109?text=Hello,%20I came from the web of Exoprime Services%20I%20would%20like%20to%20ask%20for%20a%20quote,%20my%20situation%20is:%20'
+            target='_blank'
+            className='z-10 mt-5 flex w-60 items-center justify-evenly rounded-xl bg-primary py-3 font-semibold text-white hover:translate-y-px md:py-4  md:text-base xl:mt-0'
+          >
             <Image width={35} height={35} src='/images/send.png' alt='Image' />
-            Enviar mensaje
-          </button>
+            Send message
+          </a>
         </div>
       </section>
     </React.Fragment>

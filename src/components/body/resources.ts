@@ -1,57 +1,61 @@
 export const _attributes: IAttributes[] = [
   {
     icon: "/images/custom.png",
-    title: "Personalización",
-    content: "En Exoprime, nunca empujamos a nuestros clientes a programas de limpieza predeterminados. Más bien, adaptamos nuestros programas para garantizar que abordamos los objetivos de limpieza específicos de cada cliente."
+    title: "Customization",
+    content: "At Exoprime, we never push our customers into predetermined cleaning programs. Rather, we tailor our programs to ensure that we address each client's specific cleaning objectives."
   },
   {
     icon: "/images/communication.png",
-    title: "Comunicación",
-    content: "Siempre queremos saber de nuestros clientes y asegurarnos de que estamos abordando plenamente sus necesidades. Como tal, facilitamos la comunicación directa con Mint Condition."
+    title: "Communication",
+    content: "We always want to hear from our customers and ensure that we are fully addressing their needs. As such, we facilitate direct communication with Mint Condition."
   },
   {
     icon: "/images/tecnology.png",
-    title: "Tecnología",
-    content: "Todos nuestros equipos de limpieza están equipados con la tecnología necesaria para mantener las instalaciones comerciales ordenadas, sanitarias y desinfectadas."
+    title: "Tecnology",
+    content: "All our cleaning equipment is equipped with the necessary technology to keep commercial facilities tidy, sanitary and disinfected."
   },
   {
     icon: "/images/quality.png",
-    title: "Calidad",
-    content: "Por aquí, nos gusta decir: “Inspeccionamos lo que esperamos”. En otras palabras, sometemos cada sitio de limpieza a los más altos estándares de control de calidad."
+    title: "Quality",
+    content: 'Around here, we like to say, "We inspect what we expect." In other words, we hold each cleaning site to the highest standards of quality control.'
   },
 ]
 
 export const _services: IServices[] = [
   {
-    title: 'Oficinas Comerciales',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor.',
+    title: 'Home maintenance',
+    content: 'Thanks to the increasing demand from office companies, office maintenance becomes quite a burden for some, but it is one of our specialties!',
     image: '/images/oficinas.png',
-    tag: 'oficinas'
+    tag: 'homemaintenance'
   },
   {
-    title: 'Industrias',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor.',
+    title: 'Cleaning',
+    content: "The dirty work, we know how cumbersome it can be, many times we don't start things because we think about how dirty it will end up, but with us you don't have to worry!",
     image: '/images/industrias.png',
-    tag: 'industrias'
+    tag: 'cleaning',
+    list: [
+      'Cleaning services',
+       'Maintenance services'
+    ]
   },
-  {
-    title: 'Entidades Financieras',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor.',
-    image: '/images/entidades.png',
-    tag: 'entidades'
-  },
-  {
-    title: 'Instalaciones médicas',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor.',
-    image: '/images/instalaciones.png',
-    tag: 'instalaciones'
-  },
-  {
-    title: 'Obras de Construcción',
-    content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor.',
-    image: '/images/obras.png',
-    tag: 'obras'
-  },
+  // {
+  //   title: 'Entidades Financieras',
+  //   content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor.',
+  //   image: '/images/entidades.png',
+  //   tag: 'entidades'
+  // },
+  // {
+  //   title: 'Instalaciones médicas',
+  //   content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor.',
+  //   image: '/images/instalaciones.png',
+  //   tag: 'instalaciones'
+  // },
+  // {
+  //   title: 'Obras de Construcción',
+  //   content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit et risus eu tempor.',
+  //   image: '/images/obras.png',
+  //   tag: 'obras'
+  // },
 ]
 export const _values: IValues[] = [
   {
@@ -78,7 +82,8 @@ export interface IServices {
   image: string,
   title: string,
   content: string,
-  tag: string
+  tag: string,
+  list?: string[]
 }
 
 export interface IValues {

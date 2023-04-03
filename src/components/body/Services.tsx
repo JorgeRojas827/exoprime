@@ -22,10 +22,10 @@ export const Services = () => {
     >
       <div className='col-span-12 px-16 sm:px-0 xl:col-span-6'>
         <div className='mb-10'>
-          <h2 className='mb-3 text-3xl sm:text-4xl'>Brindamos servicios a</h2>
+          <h2 className='mb-3 text-3xl sm:text-4xl'>We provide services to</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            hendrerit et risus eu tempor.
+            Multiple business categories, we are versatile and effective in any
+            field, always leaving high standards.
           </p>
         </div>
         <div>
@@ -41,6 +41,7 @@ export const Services = () => {
                 handleChange={handleChange}
                 setSelected={setSelected}
                 tag={service.tag}
+                list={service.list}
                 expanded={expanded}
               />
             );
