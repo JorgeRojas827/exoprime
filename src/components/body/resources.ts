@@ -26,7 +26,13 @@ export const _services: IServices[] = [
     title: 'Home maintenance',
     content: 'Thanks to the increasing demand from office companies, office maintenance becomes quite a burden for some, but it is one of our specialties!',
     image: '/images/oficinas.png',
-    tag: 'homemaintenance'
+    tag: 'homemaintenance',
+    list: [
+      'Air Coditioning',
+      'Electricity',
+      'Paint',
+      'Plumbing',
+    ]
   },
   {
     title: 'Cleaning',
@@ -34,8 +40,12 @@ export const _services: IServices[] = [
     image: '/images/industrias.png',
     tag: 'cleaning',
     list: [
-      'Cleaning services',
-       'Maintenance services'
+      'Post construction cleaning',
+      'Residential cleaning services',
+      'Commercial cleaning services',
+      'Financial Institutions cleaning services',
+      'Medical Facilities cleaning services',
+     
     ]
   },
   // {

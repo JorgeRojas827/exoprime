@@ -88,7 +88,7 @@ export const SingleService = ({
               {order}
             </p>
           </div>
-          <h6 className='text-lg font-bold sm:text-2xl'>{title}</h6>
+          <h6 className='text-2xl font-bold sm:text-4xl'>{title}</h6>
         </div>
       </AccordionSummary>
       <AccordionDetails>

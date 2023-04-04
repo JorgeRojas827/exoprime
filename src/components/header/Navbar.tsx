@@ -15,7 +15,7 @@ export const Navbar = () => {
       />
       <div className='col-span-9 hidden items-center justify-between md:flex'>
         <NavbarItem href='#whoweare' title='About us' />
-        <NavbarItem href='#cleaning' title='Cleaning' />
+        <NavbarItem href='#cleaning' title='Cleaning Services' />
         <NavbarItem href='#homemaintenance' title='Home Maintenance' />
         <NavbarItem href='#quotation' title='Request a quote' />
       </div>
