@@ -20,10 +20,14 @@ export const Footer = () => {
         <div className='col-span-12 hidden rounded-xl bg-white p-10 lg:block'>
           <h2>Acerca de nosotros</h2>
           <p className='mt-2'>
-            Exoprime ofrece servicios de limpieza comercial en Salt Lake City,
-            UT y la comunidad circundante. Específicamente, nos complace servir
-            a clientes en Draper, Salt Lake City, Sandy, South and West Jordan y
-            West Valley City.{' '}
+          Exoprime Services LLC is a company specializing in cleaning homes,{' '}
+            cleaning commercial, industrial, institutional and recreational
+            facilities throughout Salt Lake City County.
+            <br />
+            <br />
+            We also offer Post Construction Cleaning services, in order to
+            eliminate all the remains of excess materials, as well as the
+            cleaning of paints, stains and remains of silicone and cement.
           </p>
         </div>
       </div>
