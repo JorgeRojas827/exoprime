@@ -1,15 +1,17 @@
 import Head from 'next/head';
 import { useRouter } from 'next/router';
 
+import { openGraph } from '@/lib/helper';
+
 // !STARTERCONF Change these default meta
 const defaultMeta = {
   title: 'Exoprime Services',
   siteName: 'Exoprime Services',
   description: 'Exoprime services',
-  /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
   url: 'https://exoprimeservices.com',
   type: 'website',
   robots: 'follow, index',
+  image: '',
 };
 
 type SeoProps = {
@@ -31,12 +33,11 @@ export default function Seo(props: SeoProps) {
   // but show full title if there is none
   // !STARTERCONF Follow config for opengraph, by deploying one on https://github.com/theodorusclarence/og
   // ? Uncomment code below if you want to use default open graph
-  // meta['image'] = openGraph({
-  //   description: meta.description,
-  //   siteName: props.templateTitle ? meta.siteName : meta.title,
-  //   templateTitle: props.templateTitle,
-  // });
-
+  meta['image'] = openGraph({
+    description: meta.description,
+    siteName: props.templateTitle ? meta.siteName : meta.title,
+    templateTitle: props.templateTitle,
+  });
   return (
     <Head>
       <title>Exoprime Service'</title>
@@ -49,6 +50,7 @@ export default function Seo(props: SeoProps) {
       <meta property='site_name' content={meta.siteName} />
       <meta property='description' content={meta.description} />
       <meta property='title' content='Exoprime Service' />
+      <meta name='image' property='og:image' content={meta.image} />
       {meta.date && (
         <>
           <meta property='article:published_time' content={meta.date} />
