@@ -7,7 +7,7 @@ const defaultMeta = {
   siteName: 'Exoprime Services',
   description: 'Exoprime services',
   /** Without additional '/' on the end, e.g. https://theodorusclarence.com */
-  url: 'https://tsnext-tw.thcl.dev',
+  url: 'https://exoprimeservices.com',
   type: 'website',
   robots: 'follow, index',
 };
