@@ -42,19 +42,19 @@ export default function Seo(props: SeoProps) {
       <title>Exoprime Service</title>
       <meta name='robots' content={meta.robots} />
       <meta content={meta.description} name='description' />
-      <meta property='og:url' content={`${meta.url}${router.asPath}`} />
+      <meta property='url' content={`${meta.url}${router.asPath}`} />
       <link rel='canonical' href={`${meta.url}${router.asPath}`} />
       {/* Open Graph */}
-      <meta property='og:type' content={meta.type} />
-      <meta property='og:site_name' content={meta.siteName} />
-      <meta property='og:description' content={meta.description} />
-      <meta property='og:title' content='Exoprime Service' />
+      <meta property='type' content={meta.type} />
+      <meta property='site_name' content={meta.siteName} />
+      <meta property='description' content={meta.description} />
+      <meta property='title' content='Exoprime Service' />
       {meta.date && (
         <>
           <meta property='article:published_time' content={meta.date} />
           <meta
             name='publish_date'
-            property='og:publish_date'
+            property='publish_date'
             content={meta.date}
           />
           {/* // !STARTERCONF Remove or change to your name */}
