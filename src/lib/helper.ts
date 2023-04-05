@@ -11,7 +11,8 @@ export function openGraph({
   siteName,
   templateTitle,
   description,
-  logo = 'https://exoprimeservices.com/images/logo.jpg',
+  // !STARTERCONF Or, you can use my server with your own logo.
+  logo = 'https://og-aeb10cisk-jorgerojas827.vercel.app/images/logo.jpg',
 }: OpenGraphType): string {
   const ogLogo = encodeURIComponent(logo);
   const ogSiteName = encodeURIComponent(siteName.trim());
@@ -20,7 +21,7 @@ export function openGraph({
     : undefined;
   const ogDesc = encodeURIComponent(description.trim());
 
-  return `https://exoprimeservices.com/api/general?siteName=${ogSiteName}&description=${ogDesc}&logo=${ogLogo}${
+  return `https://og-aeb10cisk-jorgerojas827.vercel.app/api/general?siteName=${ogSiteName}&description=${ogDesc}&logo=${ogLogo}${
     ogTemplateTitle ? `&templateTitle=${ogTemplateTitle}` : ''
   }`;
 }
