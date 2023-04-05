@@ -18,9 +18,9 @@ export const Footer = () => {
           />
         </div>
         <div className='col-span-12 hidden rounded-xl bg-white p-10 lg:block'>
-          <h2>Acerca de nosotros</h2>
+          <h2>About us</h2>
           <p className='mt-2'>
-          Exoprime Services LLC is a company specializing in cleaning homes,{' '}
+            Exoprime Services LLC is a company specializing in cleaning homes,{' '}
             cleaning commercial, industrial, institutional and recreational
             facilities throughout Salt Lake City County.
             <br />
@@ -32,7 +32,7 @@ export const Footer = () => {
         </div>
       </div>
       <div className='col-span-12 mx-20 rounded-xl bg-white p-8 sm:mx-0 lg:col-span-4'>
-        <h2>Contáctanos</h2>
+        <h2>Contact</h2>
         <div className='flex flex-col space-y-5'>
           <div className='mt-10 flex space-x-3'>
             <Image

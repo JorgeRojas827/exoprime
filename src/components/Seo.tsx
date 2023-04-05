@@ -40,7 +40,7 @@ export default function Seo(props: SeoProps) {
   });
   return (
     <Head>
-      <title>Exoprime Service'</title>
+      <title>Exoprime Service</title>
       <meta name='robots' content={meta.robots} />
       <meta content={meta.description} name='description' />
       <meta property='url' content={`${meta.url}${router.asPath}`} />
