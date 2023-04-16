@@ -7,9 +7,10 @@ import { useWindowSize } from '../../hooks/useWindowSize';
 interface IProps {
   href: string;
   title: string;
+  border?: boolean;
 }
 
-export const NavbarItem = ({ href, title }: IProps) => {
+export const NavbarItem = ({ href, title, border = true }: IProps) => {
   const [hovered, setHovered] = useState<boolean>(false);
   const { width } = useWindowSize();
   const router = useRouter();
@@ -31,7 +32,7 @@ export const NavbarItem = ({ href, title }: IProps) => {
       onClick={handleClick}
     >
       <p>{title}</p>
-      {(router.asPath === '/' + href || hovered) && (
+      {(router.asPath === '/' + href || hovered) && border && (
         <div
           style={{ height: 2 }}
           className='w-16 self-center bg-primary'

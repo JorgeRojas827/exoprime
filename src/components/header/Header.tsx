@@ -3,7 +3,7 @@ import React from 'react';
 
 export const Header = () => {
   return (
-    <header className='hidden h-14 items-center justify-end space-x-10 bg-primary px-10 text-white  md:flex'>
+    <header className='hidden h-14 items-center justify-end space-x-10 bg-primary px-10 text-white md:flex'>
       <div className='flex items-center space-x-5'>
         <Image width={24} height={24} src='/images/Pin.png' alt='Pin icon' />
         <p className='text-xs font-semibold'>
