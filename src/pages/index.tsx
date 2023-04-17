@@ -1,4 +1,7 @@
 import * as React from 'react';
+import { ToastContainer } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 import { About } from '@/components/body/About';
 import { Attributes } from '@/components/body/Attributes';
@@ -30,6 +33,7 @@ export default function HomePage() {
       {/* <Seo templateTitle='Home' /> */}
       <Seo />
 
+      <ToastContainer />
       <Header />
       <Navbar />
       <CarouselComponent />

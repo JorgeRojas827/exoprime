@@ -7,7 +7,7 @@ export const _attributes: IAttributes[] = [
   {
     icon: "/images/communication.png",
     title: "Communication",
-    content: "We always want to hear from our customers and ensure that we are fully addressing their needs. As such, we facilitate direct communication with Mint Condition."
+    content: "We always want to hear from our customers and ensure that we are fully addressing their needs. As such, we facilitate direct communication with Mind Condition."
   },
   {
     icon: "/images/tecnology.png",
@@ -24,7 +24,7 @@ export const _attributes: IAttributes[] = [
 export const _services: IServices[] = [
   {
     title: 'Home maintenance',
-    content: 'Thanks to the increasing demand from office companies, office maintenance becomes quite a burden for some, but it is one of our specialties!',
+    content: 'We provide home maintenance services, cleaning any artifacts and areas that annoy you!, such as:',
     image: '/images/oficinas.png',
     tag: 'homemaintenance',
     list: [

@@ -1,4 +1,3 @@
-import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import {
   Accordion,
   AccordionDetails,
@@ -38,7 +37,7 @@ export const SingleService = ({
   const isSmUp = useMediaQuery(theme.breakpoints.up('sm'));
   return (
     <Accordion
-      expanded={expanded === tag}
+      expanded={true}
       onChange={handleChange(tag)}
       sx={{
         background: 'transparent',
@@ -58,7 +57,6 @@ export const SingleService = ({
         sx={{
           borderBottom: 0,
         }}
-        expandIcon={<ExpandMoreIcon sx={{ color: 'white' }} />}
         aria-controls={`${tag}bh-content`}
         id={`${tag}bh-header`}
       >

@@ -61,14 +61,26 @@ export const Footer = () => {
           </div>
         </div>
         <div className='mt-8 flex items-center justify-center space-x-3'>
-          <Image width={33} height={33} src='/images/twitter.png' alt='logo' />
-          <Image width={33} height={33} src='/images/facebook.png' alt='logo' />
-          <Image
-            width={33}
-            height={33}
-            src='/images/instagram.png'
-            alt='logo'
-          />
+          {/* <Image width={33} height={33} src='/images/twitter.png' alt='logo' /> */}
+          <a
+            target='_blank'
+            href='https://www.facebook.com/profile.php?id=100091455244606'
+          >
+            <Image
+              width={33}
+              height={33}
+              src='/images/facebook.png'
+              alt='logo'
+            />
+          </a>
+          <a target='_blank' href='https://www.instagram.com/exoprimeservices/'>
+            <Image
+              width={33}
+              height={33}
+              src='/images/instagram.png'
+              alt='logo'
+            />
+          </a>
         </div>
       </div>
       <div className='absolute bottom-0 grid h-14 w-full place-content-center border-t border-white border-opacity-30 text-white '>
