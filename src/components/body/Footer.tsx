@@ -34,18 +34,18 @@ export const Footer = () => {
       <div className='col-span-12 mx-20 rounded-xl bg-white p-8 sm:mx-0 lg:col-span-4'>
         <h2>Contact</h2>
         <div className='flex flex-col space-y-5'>
-          <div className='mt-10 flex space-x-3'>
+          <div className='mt-10 flex items-center space-x-3'>
             <Image
               width={30}
               height={30}
               src='/images/whatsappfooter.png'
               alt='logo'
             />
-            <div className='flex flex-col lg:flex-row'>
-              <p>+1 801 413 6952 </p> &nbsp; <p>+1 385 487 6423</p>
+            <div className='flex flex-col '>
+              <p>+1 801 413 6952 </p> <p>+1 385 487 6423</p>
             </div>
           </div>
-          <div className='flex space-x-3'>
+          <div className='flex items-center space-x-3'>
             <Image
               width={33}
               height={33}
