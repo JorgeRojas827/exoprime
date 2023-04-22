@@ -41,8 +41,9 @@ export const Footer = () => {
               src='/images/whatsappfooter.png'
               alt='logo'
             />
-            <p>+1 385 487 6109</p>
-            <p>+1 385 487 6423</p>
+            <div className='flex flex-col lg:flex-row'>
+              <p>+1 801 413 6952 </p> &nbsp; <p>+1 385 487 6423</p>
+            </div>
           </div>
           <div className='flex space-x-3'>
             <Image
